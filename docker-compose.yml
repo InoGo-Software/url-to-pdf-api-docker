@@ -1,0 +1,9 @@
+version: "3"
+
+services:
+    pdf-api:
+        image: inogo/url-to-pdf-api:latest
+        ports:
+            - 9000:9000
+        env_file:
+            - .env
